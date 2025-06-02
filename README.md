@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <body>
 
   <h1>📱 Student Attendance Tracker - Android App</h1>
@@ -32,11 +30,11 @@
   </div>
 
   <div class="section">
-    <h2>🖼️ Screenshots</h2>
-    <ul>
-      <li>🖼️ Add subject screen</li>
-      <li>🖼️ Attendance stats screen</li>
-    </ul>
+    <h2>🖼️ Demo</h2>
+    <a href="https://www.youtube.com/watch?v=GwbrHom7G2k" target="_blank">
+      <img src="https://img.youtube.com/vi/GwbrHom7G2k/0.jpg" />
+    </a>
+
   </div>
 
   <div class="section">
@@ -71,4 +69,3 @@
   </div>
 
 </body>
-</html>
