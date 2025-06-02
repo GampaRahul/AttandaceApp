@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    android:backgroundTint="#CBDEFC">
+
+
+    <LinearLayout
+        android:id="@+id/parent_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/subname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter Subject:"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/add"
+                android:layout_alignLeft="@id/min"
+                android:layout_alignStart="@id/min"
+                android:layout_alignRight="@id/subname"
+                android:layout_alignEnd="@id/subname"
+                android:background="#fff"
+                android:hint="Enter Here!!"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/subname"
+                android:layout_alignStart="@id/subname"
+                android:layout_below="@id/editText"
+                android:text="Enter Minimum Percent required:"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/minval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/min"
+                android:layout_alignLeft="@id/min"
+                android:layout_alignRight="@id/min"
+                android:layout_alignStart="@id/min"
+                android:layout_below="@id/min"
+                android:background="#fff"
+                android:focusedByDefault="false"
+                android:hint="Enter Here!!"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/relative_layout_background"
+                android:fontFamily="cursive"
+                android:onClick="onAddField"
+                android:text="ADD SUBJECT"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/add"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/relative_layout_background"
+                android:onClick="remove"
+                android:text="CLEAR ALL!!" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
